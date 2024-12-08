@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head><title>OpenAI Integration</title></head>
+<body>
+<h1>OpenAI Contextual Query</h1>
+<form method="post">
+  <textarea name="prompt" rows="5" cols="50"></textarea><br>
+  <input type="submit" value="Submit">
+</form>
+{% if response %}
+  <h2>Response:</h2>
+  <pre>{{ response }}</pre>
+{% endif %}
+</body>
+</html>

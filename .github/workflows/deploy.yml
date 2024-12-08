@@ -1,0 +1,28 @@
+name: Deploy
+on:
+  push:
+    branches: [ main ]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      # Add test steps here if you have tests
+      # - name: Run Tests
+      #   run: pytest
+
+      - name: Build Docker Image
+        run: docker build -t my-new-openai-project:latest .
+
+      # Add steps to login to your registry and push image
+      # Add steps to deploy (e.g., AWS ECS deploy action)

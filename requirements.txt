@@ -6,3 +6,4 @@ pinecone-client
 sqlite3dbm  # optional; or just use built-in sqlite3 with SQLAlchemy
 SQLAlchemy
 gunicorn    # for production serving if needed
+Flask==2.3..2

@@ -8,3 +8,17 @@ logging:
   file: logs/app.log
   max_bytes: 10485760
   backup_count: 5
+
+## Configuration Management
+mermaid_diagrams:
+  master_diagram: |
+    graph TD
+      A[Data Ingestion] --> B[Processing]
+      B --> C[Model Training]
+      C --> D[Deployment]
+  
+  module_snippets:
+    data_processor: |
+      graph LR
+        A[Input] --> B[Clean]
+        B --> C[Transform]

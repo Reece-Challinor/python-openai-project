@@ -3,35 +3,25 @@
 A Python Flask application integrating OpenAI's API and Pinecone for text embedding and retrieval.
 
 ## Table of Contents
-
 - [python-openai-project](#python-openai-project)
   - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Features](#features)
+  - [Installation](#installation)
+    - [Prerequisites](#prerequisites)
+    - [Clone the Repository](#clone-the-repository)
     - [Create a Virtual Environment](#create-a-virtual-environment)
     - [Install Dependencies](#install-dependencies)
     - [Set Up Environment Variables](#set-up-environment-variables)
   - [Usage](#usage)
   - [Project Structure](#project-structure)
     - [run.py](#runpy)
-    - [src/](#src)
-    - [templates/](#templates)
-    - [static/](#static)
+    - [src](#src)
+    - [templates](#templates)
+    - [static](#static)
   - [Contributing](#contributing)
   - [License](#license)
   - [Contact](#contact)
-
-```markdown
-    - [ui_components/flask_app.py](#srcui_componentsflask_apppy)
-    - [api_client.py](#srcapi_clientpy)
-    - [vector_store.py](#srcvector_storepy)
-    - [db_manager.py](#srcdb_managerpy)
-    - [log_manager.py](#srclog_managerpy)
-    - [prompt_manager.py](#srcprompt_managerpy)
-  - [templates/](#templates)
-  - [static/](#static)
-  - [requirements.txt](#requirementstxt)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ## Introduction
 
@@ -74,15 +64,15 @@ Activate the virtual environment:
 
 - On Windows:
 
-    ```bash
-    venv\Scripts\activate
-    ```
+  ```bash
+  venv\Scripts\activate
+  ```
 
 - On macOS/Linux:
 
-    ```bash
-    source venv/bin/activate
-    ```
+  ```bash
+  source venv/bin/activate
+  ```
 
 ### Install Dependencies
 
@@ -139,7 +129,7 @@ python-openai-project/
 
 The main entry point of the application that initializes the Flask app and starts the server.
 
-### src/
+### src
 
 Contains the core modules of the application.
 
@@ -150,13 +140,13 @@ Contains the core modules of the application.
 - `log_manager.py`: Handles logging of interactions and events.
 - `prompt_manager.py`: Builds and processes user prompts.
 
-### templates/
+### templates
 
 Contains HTML templates used by the Flask application.
 
 - `index.html`: The homepage template.
 
-### static/
+### static
 
 Holds static files like CSS, JavaScript, and images.
 
@@ -175,4 +165,3 @@ This project is licensed under the MIT License.
 ## Contact
 
 For any questions or suggestions, please contact the repository owner.
-

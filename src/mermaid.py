@@ -1,3 +1,6 @@
+
+
+'''
 from mermaid import Mermaid
 import os
 
@@ -12,3 +15,4 @@ def load_diagram_config():
 def render_module_diagram():
     diagram = load_diagram_config()
     return Mermaid(diagram).render()
+'''

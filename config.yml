@@ -1,0 +1,10 @@
+openai:
+  default_model: "gpt-4"
+  default_temperature: 0.7
+  default_max_tokens: 2048
+
+logging:
+  level: INFO
+  file: logs/app.log
+  max_bytes: 10485760
+  backup_count: 5

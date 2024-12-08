@@ -2,7 +2,7 @@ openai
 flask
 pyyaml
 python-dotenv
-pinecone-client  # optional; or just use built-in sqlite3 with SQLAlchemy
+pinecone
 SQLAlchemy
 gunicorn    # for production serving if needed
 requests    # for making HTTP requests

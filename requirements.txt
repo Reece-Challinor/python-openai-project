@@ -5,3 +5,7 @@ python-dotenv
 pinecone-client  # optional; or just use built-in sqlite3 with SQLAlchemy
 SQLAlchemy
 gunicorn    # for production serving if needed
+requests    # for making HTTP requests
+pytest      # for testing
+black       # for code formatting
+flake8      # for linting
